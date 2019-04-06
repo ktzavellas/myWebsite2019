@@ -249,7 +249,7 @@ main {
 
 #contact {
 	@include flexBox(row, wrap, space-evenly, flex-start);
-	@supports (-ms-accelerator: true) {
+	@supports (-ms-ime-align: auto) {
 		/* Microsoft Edge */
 		justify-content: space-around;
 	}

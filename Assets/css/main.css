@@ -260,7 +260,7 @@ main {
   padding: 70px;
   letter-spacing: 0.1rem;
 }
-@supports (-ms-accelerator: true) {
+@supports (-ms-ime-align: auto) {
   #contact {
     /* Microsoft Edge */
     justify-content: space-around;
