@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="Assets/css/modern_normalize.css">
+    <!--Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Acme|Audiowide|Bangers|Montserrat|Nunito+Sans" rel="stylesheet">
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Font icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- my Styles -->
+    <link rel="stylesheet" href="Assets/css/main.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark">
+      <a class="navbar-brand" id="logo" href="#">Konstantinos<br>Tzavellas</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="homeLink" class="nav-link my-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a id="aboutLink" class="nav-link my-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a id="projectLink" class="nav-link my-link" href="#">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a id="contactLink" class="nav-link my-link" href="#">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a id="connectLink" class="nav-link my-link" href="#">CONNECT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="d-flex justify-content-center align-items-center">
+      <div class="myContainer">
+        <div class="jumbotron my-jumbotron">
+          <h1 class="ml10">
+            <span class="text-wrapper">
+              <span class="letters">Hello!!</span>
+            </span>
+          </h1>
+          <p >
+            I am <span class="wrapper">Konstantinos</span>, a Junior Web developer based in Düsseldorf. Dedicated, ambitious with a knack for conceptualizing and delivering elegant, user-friendly solutions effectively and efficiently. 
+          </p>
+          <hr/>
+          <a href="Assets/Resume/Resume.pdf" class="my-header-btn btn btn-primary text-center" download>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="aboutMe" class="first-section">
+        <div class="first-section-left">
+          <img src="Assets/img/image8.jpg" alt="" />
+        </div>
+        <div class="first-section-right">
+          <h2>About me</h2>
+          <p>
+            With a passion for business, IT, technology and science, I have both the skill set and professional background necessary to dive deep into the programming world. As an upbeat, self-motivated team player with excellent communication, I envision an exciting future in the industry. Browse my site to see all that I have to offer.
+          </p>
+        </div>
+      </section>
+      <section>
+        <section id="projectIntro">
+          <h2>My Projects</h2>
+          <p>
+            Take a look at some of my projects
+          </p>
+        </section>
+        <section id="projectSection">
+          <a class="animated"
+            href="#"
+            title="Project #1"
+            data-toggle="modal"
+            data-target="#exampleModalCenter1"
+            ><img src="Assets/img/image4.jpeg" alt=""
+          /></a>
+
+          <a class="animated"
+            href="#"
+            title="Project #2"
+            data-toggle="modal"
+            data-target="#exampleModalCenter2"
+            ><img src="Assets/img/image2.jpeg" alt=""
+          /></a>
+
+          <a class="animated"
+            href="#"
+            title="Project #3"
+            data-toggle="modal"
+            data-target="#exampleModalCenter3"
+            ><img src="Assets/img/image3.jpeg" alt=""
+          /></a>
+
+          <a class="animated"
+            href="#"
+            title="Project #4"
+            data-toggle="modal"
+            data-target="#exampleModalCenter4"
+            ><img src="Assets/img/image2.jpeg" alt=""
+          /></a>
+
+          <a class="animated"
+            href="#"
+            title="Project #5"
+            data-toggle="modal"
+            data-target="#exampleModalCenter5"
+            ><img src="Assets/img/image1.jpeg" alt=""
+          /></a>
+
+          <a class="animated"
+            href="#"
+            title="Project #6"
+            data-toggle="modal"
+            data-target="#exampleModalCenter6"
+            ><img src="Assets/img/image2.jpeg" alt=""
+          /></a>
+        </section>
+        <div
+          class="modal fade"
+          id="exampleModalCenter1"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">
+                  Project #1
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <figure>
+                  <img src="Assets/img/image4.jpeg" alt="" />
+                  <figcaption>This is my project</figcaption>
+                </figure>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModalCenter2"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">
+                  Project #2
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <figure>
+                  <img src="Assets/img/image2.jpeg" alt="" />
+                  <figcaption>This is my project</figcaption>
+                </figure>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModalCenter3"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">
+                  Project #3
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <figure>
+                  <img src="Assets/img/image3.jpeg" alt="" />
+                  <figcaption>This is my project</figcaption>
+                </figure>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModalCenter4"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">
+                  Project #4
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <figure>
+                  <img src="Assets/img/image2.jpeg" alt="" />
+                  <figcaption>This is my project</figcaption>
+                </figure>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModalCenter5"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">
+                  Project #5
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <figure>
+                  <img src="Assets/img/image1.jpeg" alt="" />
+                  <figcaption>This is my project</figcaption>
+                </figure>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModalCenter6"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">
+                  Project #6
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <figure>
+                  <img src="Assets/img/image2.jpeg" alt="" />
+                  <figcaption>This is my project</figcaption>
+                </figure>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id = "contact">
+        <div class="contactForm">
+          <div>
+            <h1 class = "myContactTitle text-center">Contact me!</h1>
+          </div>
+          <hr>
+          <div class="contactFormContent">
+            <div>
+              <h5>Name:</h5>
+              <p class="myData">Konstantinos Tzavellas</p>
+            </div>
+            <hr>
+            <div>
+              <h5>E-mail:</h5>
+              <p class="myData">k.tzavellas@hotmail.com</p>
+            </div>
+            <hr>
+            <div>
+              <h5>Phone:</h5>
+              <p class="myData">+49 15216064113</p>
+            </div>
+            <hr>
+            <a href="Assets/Resume/Resume.pdf" class="my-submit-btn btn btn-primary text-center" download>
+              Download CV
+            </a>
+          </div>
+        </div>
+        <div class="contactForm">
+          <div>
+            <h1 class = "myContactTitle text-center">Or ... Say hello!</h1>
+          </div>
+          <hr>
+          <div class="contactFormContent">
+            <form id = "myForm" name="form" method="POST" action="https://formspree.io/k.tzavellas@hotmail.com" autocomplete="off">
+              <div class="formGroup">
+                <label class="label" for="usr">Name:</label>
+                <input class="myData" id="myName" type="text" name="name" minlength="2" required>
+              </div>
+              <hr>
+              <div class="formGroup">
+                <label class="label" for="e-mail">E-mail:</label>
+                <input class="myData" id="myEmail" type="email" name="email" required>
+              </div>
+              <hr>
+              <div class="formGroup">
+                <label class="label" for="comment">Message:</label>
+                <textarea class="myData" id="textArea" type="text"  name="message" required></textarea>
+              </div>
+              <hr>
+              <div>
+                <button class="my-submit-btn btn btn-primary text-center" type="submit">Send</button> 
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="socialMedia">
+        <ul>
+          <li><a href="https://www.facebook.com/KonstantinosTzavellasKT" title="Facebook Connection" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://github.com/ktzavellas" title="Github Connection" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/konstantinos-tzavellas-19695034/" title="Linkedin Connection" target="_blank"><i class="fab fa-linkedin-in"></i></a></li> 
+        </ul>
+      </section>
+    </main> 
+    
+    <footer class="my-footer">
+      <div>
+        <p>Copyright 2019</p>
+        <p class="love">Made with <i class="fas fa-heart"></i> by Konstantinos</p>
+      </div>
+    </footer>
+
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+  </body>
+
+</html>

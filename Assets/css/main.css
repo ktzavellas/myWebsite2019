@@ -1,0 +1,775 @@
+/* Basic Colors */
+/* Shadow effects */
+/* Mixins Section */
+/* Styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav.navbar {
+  background-color: black;
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  min-height: 5vh;
+  z-index: 100;
+}
+nav.navbar #logo {
+  font-family: "Audiowide", cursive;
+  font-size: 1.3em;
+  letter-spacing: 0.07rem;
+}
+nav.navbar #collapsibleNavbar {
+  position: fixed;
+  top: 120px;
+  left: 16px;
+  width: 140px;
+  text-align: center;
+  border: 2px solid white;
+  background-color: black;
+  margin: 0;
+}
+nav.navbar .nav-item {
+  min-height: 3.5rem;
+}
+nav.navbar .navbar-toggler {
+  padding: 0.5rem 0.75rem;
+}
+nav.navbar .my-link {
+  color: white !important;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  height: 56px;
+  line-height: 40px;
+}
+nav.navbar .my-link:hover {
+  text-decoration: none;
+  color: #026165 !important;
+}
+
+header {
+  min-height: 100vh;
+  background-image: linear-gradient(black 60%, #026165);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no repeat;
+  background-color: black;
+}
+header .myContainer {
+  position: relative;
+  left: 300px;
+  width: 60%;
+  overflow: hidden;
+  opacity: 0;
+  background-image: url("../img/image1.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no repeat;
+  -webkit-box-shadow: 0 0 14px 1px #04c2c9;
+  -moz-box-shadow: 0 0 14px 1px #04c2c9;
+  box-shadow: 0 0 14px 1px #04c2c9;
+}
+header .my-jumbotron {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  position: relative;
+  top: 300px;
+  opacity: 0;
+  font-size: 1.5rem;
+  line-height: 1.8em;
+  text-align: center;
+  padding: 60px;
+  letter-spacing: 0.1rem;
+}
+header .my-jumbotron h1 {
+  color: white;
+  font-size: 2.25em;
+  font-family: "Bangers", cursive;
+}
+header .my-jumbotron .wrapper {
+  font-family: "Audiowide", cursive;
+  font-size: 1.3em;
+}
+header .my-jumbotron hr {
+  border-top: 1px solid rgba(0, 0, 0, 0);
+}
+header .my-jumbotron .my-header-btn {
+  display: inline-block;
+  background-image: linear-gradient(to right, #1a001a, #037a7e);
+  background-color: #04aab0;
+  width: 45%;
+  height: 50px;
+  margin: 0 auto;
+  line-height: 34px;
+  border-radius: 10px;
+  border: 2px solid #555;
+  letter-spacing: 0.2rem;
+  font-family: "Acme", sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+header .my-jumbotron.updateColor {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+main {
+  background-color: black;
+}
+
+.first-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+.first-section .first-section-left {
+  width: 35%;
+  border: 8px solid #037a7e;
+}
+.first-section .first-section-left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.first-section .first-section-right {
+  width: 40%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: initial;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+}
+.first-section .first-section-right h2 {
+  color: #04c2c9;
+  margin-bottom: 0.65em;
+}
+.first-section .first-section-right p {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  text-align: justify;
+  color: white;
+}
+
+#projectIntro {
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  background-color: black;
+  letter-spacing: 0.1rem;
+}
+#projectIntro h2 {
+  text-align: center;
+  margin-bottom: 0.6em;
+  color: #04c2c9;
+}
+#projectIntro p {
+  width: 60%;
+  font-size: 1.3em;
+  line-height: 1.6em;
+  text-align: center;
+  color: white;
+}
+
+#projectSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: black;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+}
+#projectSection a {
+  width: 33.33%;
+  margin: 0;
+  transition: top 2.5s ease-out, opacity 2.5s ease-out;
+}
+#projectSection a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#projectSection a.fadeIn {
+  position: relative;
+  top: 0px;
+  opacity: 1;
+}
+#projectSection a.fadeOut {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+}
+
+.modal-body img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 180px auto 0;
+  width: 90%;
+  border: 2px solid white;
+  color: white;
+  padding: 70px;
+  letter-spacing: 0.1rem;
+}
+#contact .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: initial;
+  justify-content: flex-start;
+  align-items: initial;
+  width: 40%;
+  min-height: 600px;
+  padding: 10px;
+}
+#contact .contactForm .myContactTitle {
+  font-size: 2em;
+}
+#contact .contactForm .label {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+#contact .contactForm .myData {
+  background-color: #1b242f;
+  color: white;
+  margin: 0;
+  width: 100%;
+  font-size: 1.3em;
+  padding: 10px;
+  border: none;
+}
+#contact .contactForm #textArea {
+  height: 150px;
+  resize: none;
+}
+#contact .contactForm .my-submit-btn {
+  background-image: linear-gradient(to right, #1a001a, #037a7e);
+  background-color: #04aab0;
+  width: 220px;
+  height: 50px;
+  line-height: 36px;
+  letter-spacing: 0.2rem;
+  font-family: "Acme", sans-serif;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+#socialMedia {
+  min-height: 450px;
+  background-color: black;
+  position: relative;
+}
+#socialMedia ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+#socialMedia ul li {
+  margin: 30px 40px;
+}
+
+#socialMedia ul li a {
+  background-color: white;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: perspective(400px) rotate(-30deg) skew(25deg) translate(0, 0);
+  -ms-transform: perspective(400px) rotate(-30deg) skew(25deg) translate(0, 0);
+  transform: perspective(400px) rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: width 0s, height 0s, all 0.5s linear;
+}
+#socialMedia ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  -webkit-transform: skewY(-45deg);
+  -ms-transform: skewY(-45deg);
+  transform: skewY(-45deg);
+  transform-origin: right;
+  transition: left 0s, width 0s, all 0.5s linear;
+  background-color: #b1b1b1;
+}
+#socialMedia ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  top: 50px;
+  left: 0px;
+  -webkit-transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  transform: skewX(-45deg);
+  transform-origin: top;
+  transition: top 0s, height 0s, all 0.5s linear;
+  background-color: #b1b1b1;
+}
+#socialMedia ul li a:hover {
+  -webkit-transform: perspective(400px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  -ms-transform: perspective(400px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  transform: perspective(400px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+#socialMedia ul li a:hover .fab {
+  color: white;
+}
+#socialMedia ul li a .fab {
+  font-size: 30px;
+  color: black;
+  line-height: 50px;
+  transition: font-size 0s, line-height 0s, all 0.5s linear;
+}
+
+/*facebook*/
+#socialMedia ul li:hover:nth-child(1) a {
+  background-color: #3b5999;
+}
+#socialMedia ul li:hover:nth-child(1) a::before {
+  background-color: #2c3e64;
+}
+#socialMedia ul li:hover:nth-child(1) a::after {
+  background-color: #516aa5;
+}
+
+/*skype*/
+#socialMedia ul li:hover:nth-child(2) a {
+  background-color: #00aff0;
+}
+#socialMedia ul li:hover:nth-child(2) a::before {
+  background-color: #166e9b;
+}
+#socialMedia ul li:hover:nth-child(2) a::after {
+  background-color: #3c8eb9;
+}
+
+/*linkedin*/
+#socialMedia ul li:hover:nth-child(3) a {
+  background-color: #04c2c9;
+}
+#socialMedia ul li:hover:nth-child(3) a::before {
+  background-color: rgba(0, 255, 255, 0.561);
+}
+#socialMedia ul li:hover:nth-child(3) a::after {
+  background-color: rgba(0, 255, 255, 0.849);
+}
+
+.my-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: initial;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: #555;
+  min-height: 150px;
+}
+.my-footer p {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+.my-footer p .fa-heart {
+  color: red;
+}
+
+/* Scrolltop button styles */
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: white;
+  color: #1b242f;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+#back2Top:hover {
+  background-color: #ddf;
+  color: black;
+}
+
+/* Styles of animating word "Hello" in the header*/
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4em;
+}
+.ml10 .text-wrapper {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 0.2em 0.05em 0.1em 0;
+  overflow: hidden;
+  letter-spacing: 0.3rem;
+}
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
+/* Media queries section  */
+@media only screen and (max-width: 1600px) {
+  header .my-jumbotron {
+    font-size: 1.4rem;
+    line-height: 1.7em;
+    padding: 45px;
+  }
+  header .my-jumbotron h1 {
+    font-size: 2.1em;
+  }
+
+  .first-section {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  .first-section .first-section-left {
+    width: 50%;
+    margin-top: 100px;
+  }
+  .first-section .first-section-right {
+    width: 70%;
+    margin: 100px 0;
+  }
+
+  #socialMedia ul li a {
+    width: 45px;
+    height: 45px;
+  }
+  #socialMedia ul li a:before {
+    left: -18px;
+    width: 18px;
+  }
+  #socialMedia ul li a::after {
+    top: 45px;
+    height: 18px;
+  }
+  #socialMedia ul li a .fab {
+    font-size: 25px;
+    line-height: 45px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  nav.navbar #logo {
+    font-size: 1.2em;
+  }
+  nav.navbar .my-link {
+    font-size: 0.9rem;
+  }
+
+  header .my-jumbotron {
+    line-height: 1.6em;
+    padding: 30px;
+  }
+  header .my-jumbotron .my-header-btn {
+    width: 60%;
+  }
+
+  .first-section .first-section-left {
+    width: 70%;
+    margin-top: 80px;
+  }
+  .first-section .first-section-right {
+    width: 80%;
+    margin: 80px 0;
+  }
+  .first-section .first-section-right h2 {
+    font-size: 1.6rem;
+  }
+  .first-section .first-section-right p {
+    font-size: 1.25em;
+  }
+
+  #projectIntro h2 {
+    font-size: 1.6rem;
+  }
+  #projectIntro p {
+    width: 65%;
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  #projectSection a {
+    width: 50%;
+  }
+
+  #contact .contactForm {
+    width: 70%;
+  }
+  #contact .contactForm .myContactTitle {
+    font-size: 1.9em;
+  }
+  #contact .contactForm .my-submit-btn {
+    width: 100%;
+  }
+
+  #socialMedia ul {
+    width: 70%;
+  }
+  #socialMedia ul li {
+    margin: 30px 50px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  nav.navbar #collapsibleNavbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    text-align: left;
+    border: none;
+  }
+
+  header .myContainer {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav.navbar .nav-item {
+    min-height: 3rem;
+  }
+
+  header .my-jumbotron .my-header-btn {
+    width: 80%;
+    height: 45px;
+    line-height: 21px;
+    padding: 10px 15px;
+  }
+
+  .first-section .first-section-left {
+    width: 90%;
+  }
+  .first-section .first-section-right {
+    width: 90%;
+  }
+
+  #contact {
+    padding: 70px 40px;
+  }
+  #contact .contactForm {
+    width: 80%;
+    padding: 10px;
+  }
+  #contact .contactForm .myContactTitle {
+    font-size: 1.8em;
+  }
+  #contact .contactForm .myData {
+    font-size: 1.15em;
+  }
+  #contact .contactForm .my-submit-btn {
+    height: 45px;
+    line-height: 23px;
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  #socialMedia ul li a {
+    width: 40px;
+    height: 40px;
+  }
+  #socialMedia ul li a::before {
+    left: -16px;
+    width: 16px;
+  }
+  #socialMedia ul li a::after {
+    height: 16px;
+    top: 40px;
+  }
+  #socialMedia ul li a .fab {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav.navbar #logo {
+    font-size: 1.1em;
+  }
+  nav.navbar .navbar-toggler {
+    font-size: 1rem;
+  }
+
+  header {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no repeat;
+  }
+  header .my-jumbotron {
+    font-size: 1.15rem;
+  }
+  header .my-jumbotron .my-header-btn {
+    height: 40px;
+    line-height: 16px;
+  }
+  header .my-jumbotron h1 {
+    font-size: 1.9em;
+    line-height: 1;
+  }
+
+  .first-section {
+    width: 90%;
+  }
+  .first-section .first-section-left {
+    width: 80%;
+  }
+  .first-section .first-section-right {
+    width: 80%;
+  }
+  .first-section .first-section-right h2 {
+    font-size: 1.4rem;
+  }
+  .first-section .first-section-right p {
+    font-size: 1.15em;
+    letter-spacing: 0.05rem;
+  }
+
+  #projectIntro h2 {
+    font-size: 1.4rem;
+  }
+  #projectIntro p {
+    font-size: 1.2em;
+    letter-spacing: 0.05rem;
+  }
+
+  #projectSection {
+    width: 90%;
+  }
+  #projectSection a {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #contact {
+    padding: 70px 20px;
+    letter-spacing: normal;
+  }
+  #contact .contactForm {
+    padding: 10px;
+    width: 90%;
+  }
+  #contact .contactForm .myData {
+    font-size: 1.1em;
+  }
+
+  .my-footer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 420px) {
+  header {
+    min-height: 110vh;
+  }
+  header .my-jumbotron {
+    font-size: 1.05rem;
+    letter-spacing: normal;
+    padding: 15px 25px;
+  }
+  header .my-jumbotron hr {
+    margin: 0;
+  }
+
+  .first-section .first-section-right p {
+    text-align: center;
+  }
+
+  #contact {
+    padding: 50px 0;
+  }
+  #contact .contactForm {
+    width: 95%;
+    min-height: 520px;
+    padding: 10px;
+  }
+  #contact .contactForm .myData {
+    font-size: 1em;
+    padding: 5px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
