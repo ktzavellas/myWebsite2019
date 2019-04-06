@@ -260,6 +260,12 @@ main {
   padding: 70px;
   letter-spacing: 0.1rem;
 }
+@supports (-ms-accelerator: true) {
+  #contact {
+    /* Microsoft Edge */
+    justify-content: space-around;
+  }
+}
 #contact .contactForm {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -251,9 +251,7 @@ main {
 	@include flexBox(row, wrap, space-evenly, flex-start);
 	@supports (-ms-accelerator: true) {
 		/* Microsoft Edge */
-		#contact {
-			justify-content: space-around;
-		}
+		justify-content: space-around;
 	}
 	margin: 180px auto 0;
 	width: 90%;
