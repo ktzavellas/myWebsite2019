@@ -111,7 +111,7 @@ $(document).ready(function() {
         opacity: 1,
         duration: 1000,
         easing: "easeOutExpo",
-        delay: 4500
+        delay: 10000
       });
   });
 
