@@ -103,7 +103,7 @@ header {
   }
   .myContainer {
     position: relative;
-    left: 300px;
+    right: 300px;
     width: 60%;
     overflow: hidden;
     opacity: 0;
@@ -274,7 +274,7 @@ main {
     width: 40%;
     min-height: 600px;
     padding: 10px;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     .myContactTitle {
       font-size: 1.8rem;
     }
@@ -310,7 +310,7 @@ main {
       letter-spacing: 0.2rem;
       font: {
         family: "Acme", sans-serif;
-        size: 1em;
+        size: 0.9em;
         weight: 600;
       }
     }
@@ -583,7 +583,7 @@ main {
   #contact {
     .contactForm {
       width: 70%;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       .myContactTitle {
         font-size: 1.6rem;
       }
@@ -760,7 +760,7 @@ main {
     .contactForm {
       padding: 10px;
       width: 90%;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       .myContactTitle {
         font-size: 1.4rem;
       }
