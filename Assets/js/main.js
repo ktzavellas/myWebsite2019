@@ -3,7 +3,7 @@
 $(window).on("load", function() {
   /* Animations when the page loads */
   $(".jumbotron")
-    .delay(4500)
+    .delay(5000)
     .animate(
       {
         top: "0",
@@ -90,7 +90,7 @@ $(document).ready(function() {
   });
 
   /* Code to animate the word "hello" in the header */
-  /* $(".ml10 .letters").each(function() {
+  $(".ml10 .letters").each(function() {
     $(this).html(
       $(this)
         .text()
@@ -114,7 +114,7 @@ $(document).ready(function() {
       duration: 1000,
       easing: "easeOutExpo",
       delay: 10000
-    }); */
+    });
 
   // Check if element is scrolled into view
   function isScrolledIntoView(elem) {
