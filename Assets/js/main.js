@@ -3,7 +3,7 @@
 $(window).on("load", function() {
   /* Animations when the page loads */
   $(".jumbotron")
-    .delay(5000)
+    .delay(5500)
     .animate(
       {
         top: "0",
